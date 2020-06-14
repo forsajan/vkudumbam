@@ -1,18 +1,29 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <TreeChart :json="treeData" />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import TreeChart from "vue-tree-chart";
+import { treeViewData } from "@/model";
 
 export default {
   name: "Home",
+  data() {
+    return {
+      treeData: treeViewData,
+    };
+  },
   components: {
-    HelloWorld
-  }
+    TreeChart,
+  },
 };
 </script>
+<style scoped>
+.home {
+  display: flex;
+  align-content: center;
+}
+</style>
