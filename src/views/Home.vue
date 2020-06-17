@@ -1,12 +1,12 @@
 <template>
   <div class="home">
-    <TreeChart :json="treeData" />
+    <TreeStructure :treeData="treeData" />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import TreeChart from "vue-tree-chart";
+import TreeStructure from "../components/TreeStructure.vue";
 import { treeViewData } from "@/model";
 
 export default {
@@ -17,7 +17,7 @@ export default {
     };
   },
   components: {
-    TreeChart,
+    TreeStructure,
   },
 };
 </script>
