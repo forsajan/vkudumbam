@@ -147,21 +147,109 @@ export const treeViewData: TreeDataType = {
       ],
     },
     {
-      name: "Shri GauriKutti Amma",
+      name: "Smt GauriKutti Amma",
       image_url: "/img/person-placeholder.png",
       extend: false,
       children: [
         {
-          name: "Shri Devakiamma",
+          name: "Smt Devakiamma",
           image_url: "/img/person-placeholder.png",
+          children: [
+            {
+              name: "Smt Devi",
+              image_url: "/img/person-placeholder.png",
+            },
+            {
+              name: "Smt Thankam",
+              image_url: "/img/person-placeholder.png",
+            },
+            {
+              name: "Smt Sati",
+              image_url: "/img/person-placeholder.png",
+            },
+            {
+              name: "Shri Muralidharan",
+              image_url: "/img/person-placeholder.png",
+            },
+          ],
         },
         {
           name: "Shri Gopalakrishnan",
           image_url: "/img/person-placeholder.png",
+          children: [
+            {
+              name: "Smt Divya(Asha)",
+              image_url: "/img/person-placeholder.png",
+              children: [
+                {
+                  name: "Rohit(Monu)",
+                  image_url: "/img/person-placeholder.png",
+                },
+                {
+                  name: "Ammu",
+                  image_url: "/img/person-placeholder.png",
+                },
+              ],
+            },
+            {
+              name: "Smt Deepti(Maya)",
+              image_url: "/img/person-placeholder.png",
+              children: [
+                {
+                  name: "Dhyuti",
+                  image_url: "/img/person-placeholder.png",
+                },
+                {
+                  name: "Drupad",
+                  image_url: "/img/person-placeholder.png",
+                },
+              ],
+            },
+            {
+              name: "Shri Dipin(Muthu)",
+              image_url: "/img/person-placeholder.png",
+              children: [
+                {
+                  name: "Diya",
+                  image_url: "/img/person-placeholder.png",
+                },
+                {
+                  name: "Daksha",
+                  image_url: "/img/person-placeholder.png",
+                },
+              ],
+            },
+          ],
         },
         {
           name: "Shri Bhaskaran",
           image_url: "/img/person-placeholder.png",
+          children: [
+            {
+              name: "Smt Seema",
+              image_url: "/img/person-placeholder.png",
+              children: [
+                {
+                  name: "Chinmayee",
+                  image_url: "/img/person-placeholder.png",
+                },
+              ],
+            },
+            {
+              name: "Shri Sajan(Biju)",
+              image_url: "/img/person-placeholder.png",
+              children: [
+                {
+                  name: "Devika",
+                  image_url: "/img/person-placeholder.png",
+                },
+                {
+                  name: "Anvika",
+                  image_url: "/img/person-placeholder.png",
+                },
+              ],
+            },
+          ],
         },
         {
           name: "Shri Sreedharan",
@@ -170,6 +258,36 @@ export const treeViewData: TreeDataType = {
         {
           name: "Smt Radhamma",
           image_url: "/img/person-placeholder.png",
+          children: [
+            {
+              name: "Smt Anuradha(Simi)",
+              image_url: "/img/person-placeholder.png",
+              children: [
+                {
+                  name: "Devika",
+                  image_url: "/img/person-placeholder.png",
+                },
+                {
+                  name: "Anvika",
+                  image_url: "/img/person-placeholder.png",
+                },
+              ],
+            },
+            {
+              name: "Shri Anoop(Sinu)",
+              image_url: "/img/person-placeholder.png",
+              children: [
+                {
+                  name: "Aryan",
+                  image_url: "/img/person-placeholder.png",
+                },
+                {
+                  name: "Aradhya",
+                  image_url: "/img/person-placeholder.png",
+                },
+              ],
+            },
+          ],
         },
         {
           name: "Shri Radhakrishnan",

@@ -1,55 +1,29 @@
 <template>
-  <div class="tree">
-    <ul v-if="treeData.name">
-      <li>
-        <a href="#" @click="showChildren" :title="linkTitle(treeData.name)">
-          <div>
-            <img :src="treeData.image_url" width="45px" />
-          </div>
-          <div>{{ treeData.name }}</div>
-        </a>
-        <TreeChild
-          v-if="treeData.children"
-          :treeChildData="treeData.children"
-          :isVisible="isVisible"
-        />
-      </li>
-    </ul>
-  </div>
+  <ul v-if="treeChildData && isVisible">
+    <li v-for="child in treeChildData" :key="child.name">
+      <TreeStructure :treeData="child" />
+    </li>
+  </ul>
 </template>
-
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
+import TreeStructure from "./TreeStructure.vue";
 import { TreeDataType } from "../model";
 
 @Component({
   components: {
-    TreeChild: () => import("./TreeChild.vue")
+    TreeStructure
   }
 })
-export default class TreeStructure extends Vue {
-  @Prop() treeData!: TreeDataType;
-  isVisible = false;
-
-  showChildren() {
-    this.isVisible = !this.isVisible;
-  }
-
-  linkTitle(name: string) {
-    return `Click to see Children of ${name}`;
-  }
+export default class TreeChild extends Vue {
+  @Prop() treeChildData!: Array<TreeDataType>;
+  @Prop() isVisible = false;
 }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 * {
   margin: 0;
   padding: 0;
-}
-
-.blue-bg {
-  background-color: #7676dd;
 }
 
 .tree ul {
@@ -138,9 +112,7 @@ right connector from last child*/
   border: 1px solid #ccc;
   padding: 5px 10px;
   text-decoration: none;
-
-  background: #42b983;
-  color: #2c3e50;
+  color: #666;
   font-family: arial, verdana, tahoma;
   font-size: 11px;
   display: inline-block;
@@ -158,7 +130,7 @@ right connector from last child*/
 /*We will apply the hover effect the the lineage of the element also*/
 .tree li a:hover,
 .tree li a:hover + ul li a {
-  background-color: #c8e4f8;
+  background: #c8e4f8;
   color: #000;
   border: 1px solid #94a0b4;
 }

@@ -13,17 +13,19 @@ export default {
   name: "Home",
   data() {
     return {
-      treeData: treeViewData,
+      treeData: treeViewData
     };
   },
   components: {
-    TreeStructure,
-  },
+    TreeStructure
+  }
 };
 </script>
 <style scoped>
 .home {
   display: flex;
-  align-content: center;
+  justify-content: center;
+  width: 98%;
+  padding-bottom: 10pt;
 }
 </style>
