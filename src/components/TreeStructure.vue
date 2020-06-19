@@ -2,11 +2,14 @@
   <div class="tree">
     <ul v-if="treeData.name">
       <li>
-        <a href="#" @click="showChildren" :title="linkTitle(treeData.name)">
+        <a href="#" @click="showChildren" :title="linkTitle(treeData)">
           <div>
             <img :src="treeData.image_url" width="45px" />
           </div>
           <div>{{ treeData.name }}</div>
+          <div v-if="treeData.children" class="child-arrow">
+            <img src="/img/icons/down-list-arrow.png" width="16" />
+          </div>
         </a>
         <TreeChild
           v-if="treeData.children"
@@ -35,8 +38,8 @@ export default class TreeStructure extends Vue {
     this.isVisible = !this.isVisible;
   }
 
-  linkTitle(name: string) {
-    return `Click to see Children of ${name}`;
+  linkTitle(data: TreeDataType) {
+    return data.children ? `Click to see Children of ${data.name}` : "";
   }
 }
 </script>
@@ -47,7 +50,9 @@ export default class TreeStructure extends Vue {
   margin: 0;
   padding: 0;
 }
-
+.child-arrow {
+  padding-top: 4px;
+}
 .blue-bg {
   background-color: #7676dd;
 }

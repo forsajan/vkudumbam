@@ -65,7 +65,7 @@ export const treeViewData: TreeDataType = {
                   image_url: "/img/person-placeholder.png",
                   children: [
                     {
-                      name: "Smt Shreya",
+                      name: "Shreya",
                       image_url: "/img/person-placeholder.png",
                     },
                   ],
@@ -91,11 +91,11 @@ export const treeViewData: TreeDataType = {
               image_url: "/img/person-placeholder.png",
               children: [
                 {
-                  name: "Shri Girish",
+                  name: "Girish",
                   image_url: "/img/person-placeholder.png",
                 },
                 {
-                  name: "Shri Abhishek",
+                  name: "Abhishek",
                   image_url: "/img/person-placeholder.png",
                 },
               ],
@@ -105,7 +105,7 @@ export const treeViewData: TreeDataType = {
               image_url: "/img/person-placeholder.png",
               children: [
                 {
-                  name: "Smt Laxmi",
+                  name: "Laxmi",
                   image_url: "/img/person-placeholder.png",
                 },
               ],
@@ -115,11 +115,11 @@ export const treeViewData: TreeDataType = {
               image_url: "/img/person-placeholder.png",
               children: [
                 {
-                  name: "Smt Laxmi",
+                  name: "Laxmi",
                   image_url: "/img/person-placeholder.png",
                 },
                 {
-                  name: "Shri Anand",
+                  name: "Anand",
                   image_url: "/img/person-placeholder.png",
                 },
               ],
@@ -254,6 +254,16 @@ export const treeViewData: TreeDataType = {
         {
           name: "Shri Sreedharan",
           image_url: "/img/person-placeholder.png",
+          children: [
+            {
+              name: "Shri Santosh",
+              image_url: "/img/person-placeholder.png",
+            },
+            {
+              name: "Smt Sangeeta",
+              image_url: "/img/person-placeholder.png",
+            },
+          ],
         },
         {
           name: "Smt Radhamma",
@@ -296,20 +306,136 @@ export const treeViewData: TreeDataType = {
         {
           name: "Shri Unnikrishnan",
           image_url: "/img/person-placeholder.png",
+          children: [
+            {
+              name: "Umesh",
+              image_url: "/img/person-placeholder.png",
+            },
+            {
+              name: "Hari",
+              image_url: "/img/person-placeholder.png",
+            },
+          ],
         },
         {
           name: "Smt Mani",
           image_url: "/img/person-placeholder.png",
+          children: [
+            {
+              name: "Smt Manju",
+              image_url: "/img/person-placeholder.png",
+              children: [
+                {
+                  name: "Ambadi",
+                  image_url: "/img/person-placeholder.png",
+                },
+                {
+                  name: "Meenaxi",
+                  image_url: "/img/person-placeholder.png",
+                },
+              ],
+            },
+            {
+              name: "Shri Chinnan",
+              image_url: "/img/person-placeholder.png",
+            },
+          ],
         },
         {
           name: "Shri Sivasankaran",
           image_url: "/img/person-placeholder.png",
+          children: [
+            {
+              name: "Manu Shankar",
+              image_url: "/img/person-placeholder.png",
+            },
+            {
+              name: "Vinu Shankar",
+              image_url: "/img/person-placeholder.png",
+            },
+          ],
         },
       ],
     },
     {
       name: "Shri Vasu Panicker",
       image_url: "/img/person-placeholder.png",
+      children: [
+        {
+          name: "Shri Unnikrishnan",
+          image_url: "/img/person-placeholder.png",
+          children: [
+            {
+              name: "Smt Sindhu",
+              image_url: "/img/person-placeholder.png",
+            },
+            {
+              name: "Shri Sandeep",
+              image_url: "/img/person-placeholder.png",
+            },
+          ],
+        },
+        {
+          name: "Smt Rupini",
+          image_url: "/img/person-placeholder.png",
+          children: [
+            {
+              name: "Smt Divya(Asha)",
+              image_url: "/img/person-placeholder.png",
+              children: [
+                {
+                  name: "Rohit(Monu)",
+                  image_url: "/img/person-placeholder.png",
+                },
+                {
+                  name: "Ammu",
+                  image_url: "/img/person-placeholder.png",
+                },
+              ],
+            },
+            {
+              name: "Smt Deepti(Maya)",
+              image_url: "/img/person-placeholder.png",
+              children: [
+                {
+                  name: "Dhyuti",
+                  image_url: "/img/person-placeholder.png",
+                },
+                {
+                  name: "Drupad",
+                  image_url: "/img/person-placeholder.png",
+                },
+              ],
+            },
+            {
+              name: "Shri Dipin(Muthu)",
+              image_url: "/img/person-placeholder.png",
+              children: [
+                {
+                  name: "Diya",
+                  image_url: "/img/person-placeholder.png",
+                },
+                {
+                  name: "Daksha",
+                  image_url: "/img/person-placeholder.png",
+                },
+              ],
+            },
+          ],
+        },
+        {
+          name: "Shri Soman",
+          image_url: "/img/person-placeholder.png",
+        },
+        {
+          name: "Shri Vijay Mohan",
+          image_url: "/img/person-placeholder.png",
+        },
+        {
+          name: "Shri Ashokan",
+          image_url: "/img/person-placeholder.png",
+        },
+      ],
     },
     {
       name: "Smt Meenakshi Amma",
